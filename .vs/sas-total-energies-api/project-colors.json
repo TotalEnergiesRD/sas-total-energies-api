@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f8b66f96-0254-4d3f-bcca-8c134c0858fe": {
+      "ProjectGuid": "f8b66f96-0254-4d3f-bcca-8c134c0858fe",
+      "DisplayName": "sas-total-energies-api",
+      "ColorIndex": 0
+    },
+    "94d4726a-9c68-427a-b349-b949a3932964": {
+      "ProjectGuid": "94d4726a-9c68-427a-b349-b949a3932964",
+      "DisplayName": "Data_Layer",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
