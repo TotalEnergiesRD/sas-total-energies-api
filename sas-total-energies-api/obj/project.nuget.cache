@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "vnf3PKHsAPhGqhxE297Z9KYMVV3EPmUetRlOGP4mcaNTEwsbaa6N0JKeU+QT5LVXjTgoENC4p8ZhBf4t7WjiyA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Jannabel Ramos\\Desktop\\SAS\\sas-total-energies-api\\sas-total-energies-api\\sas-total-energies-api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jannabel Ramos\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Jannabel Ramos\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Jannabel Ramos\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Jannabel Ramos\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Jannabel Ramos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Jannabel Ramos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
