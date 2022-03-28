@@ -8,5 +8,6 @@ namespace Data_Layer.Connection
 {
     internal class DataBaseCore
     {
+
     }
 }
