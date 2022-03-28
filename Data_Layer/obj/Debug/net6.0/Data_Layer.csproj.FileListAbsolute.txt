@@ -12,8 +12,6 @@ C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Data_Layer
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\ref\Data_Layer.dll
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\Data_Layer.pdb
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\Data_Layer.genruntimeconfig.cache
-C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Entity_L.dll
-C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Entity_L.pdb
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\Data_Layer.csproj.CopyComplete
 C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Data_Layer.deps.json
 C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Data_Layer.runtimeconfig.json
@@ -32,3 +30,5 @@ C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\Data_L
 C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\ref\Data_Layer.dll
 C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\Data_Layer.pdb
 C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\Data_Layer.genruntimeconfig.cache
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Entity_Layer.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Entity_Layer.pdb

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Entity_L;
+using Entity_Layer;
 
 namespace Data_Layer.Users
 {

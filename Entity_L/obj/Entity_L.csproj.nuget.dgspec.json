@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Randy\\Desktop\\sas-total-energies-api\\Entity_L\\Entity_L.csproj": {}
+    "C:\\Users\\Jannabel Ramos\\Desktop\\TOTAL ENERGIES\\sas-total-energies-api\\Entity_L\\Entity_L.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Randy\\Desktop\\sas-total-energies-api\\Entity_L\\Entity_L.csproj": {
+    "C:\\Users\\Jannabel Ramos\\Desktop\\TOTAL ENERGIES\\sas-total-energies-api\\Entity_L\\Entity_L.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Randy\\Desktop\\sas-total-energies-api\\Entity_L\\Entity_L.csproj",
+        "projectUniqueName": "C:\\Users\\Jannabel Ramos\\Desktop\\TOTAL ENERGIES\\sas-total-energies-api\\Entity_L\\Entity_L.csproj",
         "projectName": "Entity_L",
-        "projectPath": "C:\\Users\\Randy\\Desktop\\sas-total-energies-api\\Entity_L\\Entity_L.csproj",
-        "packagesPath": "C:\\Users\\Randy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Randy\\Desktop\\sas-total-energies-api\\Entity_L\\obj\\",
+        "projectPath": "C:\\Users\\Jannabel Ramos\\Desktop\\TOTAL ENERGIES\\sas-total-energies-api\\Entity_L\\Entity_L.csproj",
+        "packagesPath": "C:\\Users\\Jannabel Ramos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jannabel Ramos\\Desktop\\TOTAL ENERGIES\\sas-total-energies-api\\Entity_L\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Randy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jannabel Ramos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

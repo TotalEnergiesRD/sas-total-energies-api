@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sas-total-energies-api", "s
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data_Layer", "Data_Layer\Data_Layer.csproj", "{94D4726A-9C68-427A-B349-B949A3932964}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity_L", "Entity_L\Entity_L.csproj", "{738C554E-20AD-4A57-A3AD-07FE2D84F1DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity_Layer", "Entity_L\Entity_Layer.csproj", "{738C554E-20AD-4A57-A3AD-07FE2D84F1DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

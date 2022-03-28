@@ -2603,7 +2603,7 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "Entity_L/1.0.0": {
+      "Entity_Layer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -2612,10 +2612,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.3"
         },
         "compile": {
-          "bin/placeholder/Entity_L.dll": {}
+          "bin/placeholder/Entity_Layer.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Entity_L.dll": {}
+          "bin/placeholder/Entity_Layer.dll": {}
         }
       }
     }
@@ -8009,15 +8009,15 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
-    "Entity_L/1.0.0": {
+    "Entity_Layer/1.0.0": {
       "type": "project",
-      "path": "../Entity_L/Entity_L.csproj",
-      "msbuildProject": "../Entity_L/Entity_L.csproj"
+      "path": "../Entity_L/Entity_Layer.csproj",
+      "msbuildProject": "../Entity_L/Entity_Layer.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Entity_L >= 1.0.0",
+      "Entity_Layer >= 1.0.0",
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.3",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.3",
@@ -8026,19 +8026,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Randy\\.nuget\\packages\\": {}
+    "C:\\Users\\Jannabel Ramos\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Randy\\Desktop\\sas-total-energies-api\\Data_Layer\\Data_Layer.csproj",
+      "projectUniqueName": "C:\\Users\\Jannabel Ramos\\Desktop\\TOTAL ENERGIES\\sas-total-energies-api\\Data_Layer\\Data_Layer.csproj",
       "projectName": "Data_Layer",
-      "projectPath": "C:\\Users\\Randy\\Desktop\\sas-total-energies-api\\Data_Layer\\Data_Layer.csproj",
-      "packagesPath": "C:\\Users\\Randy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Randy\\Desktop\\sas-total-energies-api\\Data_Layer\\obj\\",
+      "projectPath": "C:\\Users\\Jannabel Ramos\\Desktop\\TOTAL ENERGIES\\sas-total-energies-api\\Data_Layer\\Data_Layer.csproj",
+      "packagesPath": "C:\\Users\\Jannabel Ramos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jannabel Ramos\\Desktop\\TOTAL ENERGIES\\sas-total-energies-api\\Data_Layer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Randy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jannabel Ramos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8052,8 +8057,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Randy\\Desktop\\sas-total-energies-api\\Entity_L\\Entity_L.csproj": {
-              "projectPath": "C:\\Users\\Randy\\Desktop\\sas-total-energies-api\\Entity_L\\Entity_L.csproj"
+            "C:\\Users\\Jannabel Ramos\\Desktop\\TOTAL ENERGIES\\sas-total-energies-api\\Entity_L\\Entity_Layer.csproj": {
+              "projectPath": "C:\\Users\\Jannabel Ramos\\Desktop\\TOTAL ENERGIES\\sas-total-energies-api\\Entity_L\\Entity_Layer.csproj"
             }
           }
         }

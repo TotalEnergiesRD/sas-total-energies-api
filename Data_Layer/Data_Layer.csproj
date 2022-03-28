@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Cases\" />
     <Folder Include="Clients\" />
     <Folder Include="Tracking\" />
   </ItemGroup>
@@ -27,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Entity_L\Entity_L.csproj" />
+    <ProjectReference Include="..\Entity_L\Entity_Layer.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace Entity_L
+namespace Entity_Layer
 {
     public partial class SASContext : DbContext
     {
@@ -28,7 +29,6 @@ namespace Entity_L
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseNpgsql("Host=ec2-18-215-96-22.compute-1.amazonaws.com;port=5432;Username=tzwcivhllrjqew;Password=6566053a603e3f97da02bc3c5a100c86ee944fd040d729995cabcc2d6be8e4d3;Database=deu2idj44gijd9");
             }
         }
@@ -44,7 +44,7 @@ namespace Entity_L
 
                 entity.Property(e => e.IdCaso).ValueGeneratedNever();
 
-                entity.Property(e => e.Extra).HasColumnType("json");
+                //entity.Property(e => e.Extra).HasConversion(json => json.GetRawText(), str => JsonDocument.Parse(str, default).RootElement);
 
                 entity.Property(e => e.Fecha).HasMaxLength(50);
 
