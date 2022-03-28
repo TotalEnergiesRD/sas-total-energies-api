@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Entity_L
+namespace Entity_Layer
 {
     public partial class Cliente
     {

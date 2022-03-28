@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Data_Layer.Category;
-using Entity_L;
+using Entity_Layer;
 
 namespace sas_total_energies_api.Controllers
 {

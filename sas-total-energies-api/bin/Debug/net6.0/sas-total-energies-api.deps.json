@@ -9,7 +9,7 @@
       "sas-total-energies-api/1.0.0": {
         "dependencies": {
           "Data_Layer": "1.0.0",
-          "Entity_L": "1.0.0",
+          "Entity_Layer": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.3",
           "Newtonsoft.Json": "13.0.1",
@@ -1490,7 +1490,7 @@
       },
       "Data_Layer/1.0.0": {
         "dependencies": {
-          "Entity_L": "1.0.0",
+          "Entity_Layer": "1.0.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Newtonsoft.Json": "13.0.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.3"
@@ -1499,14 +1499,14 @@
           "Data_Layer.dll": {}
         }
       },
-      "Entity_L/1.0.0": {
+      "Entity_Layer/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Newtonsoft.Json": "13.0.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.3"
         },
         "runtime": {
-          "Entity_L.dll": {}
+          "Entity_Layer.dll": {}
         }
       }
     }
@@ -2754,7 +2754,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Entity_L/1.0.0": {
+    "Entity_Layer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
