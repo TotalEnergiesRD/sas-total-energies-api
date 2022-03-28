@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
-namespace sas_total_energies_api
+namespace Entity_L
 {
     public partial class SASContext : DbContext
     {
@@ -46,38 +46,9 @@ namespace sas_total_energies_api
 
                 entity.Property(e => e.Extra).HasColumnType("json");
 
-                entity.HasOne(d => d.CategoriaNavigation)
-                    .WithMany(p => p.Casos)
-                    .HasForeignKey(d => d.Categoria)
-                    .HasConstraintName("Categoria");
+                entity.Property(e => e.Fecha).HasMaxLength(50);
 
-                entity.HasOne(d => d.DetalleNavigation)
-                    .WithMany(p => p.Casos)
-                    .HasForeignKey(d => d.Detalle)
-                    .HasConstraintName("Detalle");
-
-                entity.HasOne(d => d.IdClienteNavigation)
-                    .WithMany(p => p.Casos)
-                    .HasForeignKey(d => d.IdCliente)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("Cliente");
-
-                entity.HasOne(d => d.ResponsableNavigation)
-                    .WithMany(p => p.Casos)
-                    .HasForeignKey(d => d.Responsable)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("Responsable");
-
-                entity.HasOne(d => d.SubCategoriaNavigation)
-                    .WithMany(p => p.Casos)
-                    .HasForeignKey(d => d.SubCategoria)
-                    .HasConstraintName("SubCategoria");
-
-                entity.HasOne(d => d.TipoDeCasoNavigation)
-                    .WithMany(p => p.Casos)
-                    .HasForeignKey(d => d.TipoDeCaso)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("TipoDeCasos");
+                entity.Property(e => e.Tiempo).HasMaxLength(50);
             });
 
             modelBuilder.Entity<Categorium>(entity =>
@@ -90,12 +61,6 @@ namespace sas_total_energies_api
                 entity.Property(e => e.IdCategoria).UseIdentityAlwaysColumn();
 
                 entity.Property(e => e.Nombre).HasMaxLength(50);
-
-                entity.HasOne(d => d.TipodeCasoNavigation)
-                    .WithMany(p => p.Categoria)
-                    .HasForeignKey(d => d.TipodeCaso)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("TipodeCaso");
             });
 
             modelBuilder.Entity<Cliente>(entity =>
@@ -124,12 +89,6 @@ namespace sas_total_energies_api
                 entity.Property(e => e.IdDetalle).UseIdentityAlwaysColumn();
 
                 entity.Property(e => e.Nombre).HasMaxLength(50);
-
-                entity.HasOne(d => d.SubCategoriaNavigation)
-                    .WithMany(p => p.Detalles)
-                    .HasForeignKey(d => d.SubCategoria)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("SubCategoria");
             });
 
             modelBuilder.Entity<SubCategorium>(entity =>
@@ -142,26 +101,23 @@ namespace sas_total_energies_api
                 entity.Property(e => e.IdSubCategoria).UseIdentityAlwaysColumn();
 
                 entity.Property(e => e.Nombre).HasMaxLength(50);
-
-                entity.HasOne(d => d.CategoriaNavigation)
-                    .WithMany(p => p.SubCategoria)
-                    .HasForeignKey(d => d.Categoria)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("Categoria");
             });
 
             modelBuilder.Entity<TipoDeCaso>(entity =>
             {
-                entity.HasKey(e => e.IdCaso)
-                    .HasName("TipoDeCasos_pkey");
+                entity.HasNoKey();
 
                 entity.ToTable("TipoDeCasos", "SAS");
 
-                entity.Property(e => e.IdCaso).UseIdentityAlwaysColumn();
+                entity.Property(e => e.IdCaso)
+                    .ValueGeneratedOnAdd()
+                    .UseIdentityAlwaysColumn();
 
                 entity.Property(e => e.Nombre).HasMaxLength(50);
 
-                entity.Property(e => e.Sla).HasColumnName("SLA");
+                entity.Property(e => e.Sla)
+                    .HasMaxLength(50)
+                    .HasColumnName("SLA");
             });
 
             modelBuilder.Entity<Usuario>(entity =>

@@ -12,3 +12,17 @@ C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Entity_L\o
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Entity_L\obj\Debug\net6.0\ref\Entity_L.dll
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_L.pdb
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_L.genruntimeconfig.cache
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\bin\Debug\net6.0\Entity_L.deps.json
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\bin\Debug\net6.0\Entity_L.runtimeconfig.json
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\bin\Debug\net6.0\Entity_L.dll
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\bin\Debug\net6.0\ref\Entity_L.dll
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\bin\Debug\net6.0\Entity_L.pdb
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_L.csproj.AssemblyReference.cache
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_L.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_L.AssemblyInfoInputs.cache
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_L.AssemblyInfo.cs
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_L.csproj.CoreCompileInputs.cache
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_L.dll
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\ref\Entity_L.dll
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_L.pdb
+C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_L.genruntimeconfig.cache
