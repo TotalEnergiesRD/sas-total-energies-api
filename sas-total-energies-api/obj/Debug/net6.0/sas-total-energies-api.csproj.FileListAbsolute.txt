@@ -25,3 +25,42 @@ C:\Users\Jannabel Ramos\Desktop\SAS\sas-total-energies-api\sas-total-energies-ap
 C:\Users\Jannabel Ramos\Desktop\SAS\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\ref\sas-total-energies-api.dll
 C:\Users\Jannabel Ramos\Desktop\SAS\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.pdb
 C:\Users\Jannabel Ramos\Desktop\SAS\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.genruntimeconfig.cache
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\appsettings.json
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\sas-total-energies-api.exe
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\sas-total-energies-api.deps.json
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\sas-total-energies-api.runtimeconfig.json
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\sas-total-energies-api.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\ref\sas-total-energies-api.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\sas-total-energies-api.pdb
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Npgsql.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Data_Layer.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Data_Layer.pdb
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.csproj.AssemblyReference.cache
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.AssemblyInfoInputs.cache
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.AssemblyInfo.cs
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.csproj.CoreCompileInputs.cache
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\scopedcss\bundle\sas-total-energies-api.styles.css
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.csproj.CopyComplete
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\ref\sas-total-energies-api.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.pdb
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.genruntimeconfig.cache
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Entity_L.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Entity_L.pdb
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
