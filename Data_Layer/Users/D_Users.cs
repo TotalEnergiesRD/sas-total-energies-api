@@ -7,6 +7,7 @@ using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Entity_Layer;
+using Data_Layer.Auth;
 
 namespace Data_Layer.Users
 {
@@ -29,6 +30,7 @@ namespace Data_Layer.Users
         {
             try
             {
+                usuario.Password = Encrypt.GetMD5(usuario.Password);
                 _context.Usuarios.Add(usuario);
                 await _context.SaveChangesAsync();
                 return true;
@@ -72,7 +74,7 @@ namespace Data_Layer.Users
                 _context.Usuarios.Update(usuario);
                 _context.SaveChanges();
                 return true;
-
+                
             }
             catch (Exception)
             {

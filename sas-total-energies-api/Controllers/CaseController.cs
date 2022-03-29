@@ -12,7 +12,7 @@ namespace sas_total_energies_api.Controllers
     public class CaseController : ControllerBase
     {
         private D_Cases cases = new D_Cases();
-
+        
         [HttpGet("GetAll")]
         public async Task<List<Caso>> GetAll()
         {
@@ -55,6 +55,7 @@ namespace sas_total_energies_api.Controllers
             }
 
         }
+               
 
         [HttpDelete("Delete")]
         public async Task<bool> Delete(int idcaso)
