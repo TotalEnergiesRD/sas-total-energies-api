@@ -65,7 +65,7 @@ namespace Data_Layer.Category
 
         }
 
-        public async Task<bool> Edit(Categorium category)
+        public async Task<bool> Update(Categorium category)
         {
             try
             {

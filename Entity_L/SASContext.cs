@@ -42,9 +42,7 @@ namespace Entity_Layer
 
                 entity.ToTable("Casos", "SAS");
 
-                entity.Property(e => e.IdCaso).ValueGeneratedNever();
-
-                //entity.Property(e => e.Extra).HasConversion(json => json.GetRawText(), str => JsonDocument.Parse(str, default).RootElement);
+                entity.Property(e => e.IdCaso).UseIdentityAlwaysColumn();
 
                 entity.Property(e => e.Fecha).HasMaxLength(50);
 

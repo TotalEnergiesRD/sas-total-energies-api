@@ -65,7 +65,7 @@ namespace Data_Layer.Users
 
         }
 
-        public async Task<bool> Edit(Usuario usuario)
+        public async Task<bool> Update(Usuario usuario)
         {
             try
             {

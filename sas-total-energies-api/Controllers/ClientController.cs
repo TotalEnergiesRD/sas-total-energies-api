@@ -1,88 +1,86 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Data_Layer.Category;
+using Data_Layer.Clients;
 using Entity_Layer;
 
 namespace sas_total_energies_api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class ClientController : ControllerBase
     {
-        private D_Category category = new D_Category();
+        private D_Clients client = new D_Clients();
+
         [HttpGet("GetAll")]
-        public async Task<List<Categorium>> GetAll()
+        public async Task<List<Cliente>> GetAll()
         {
             try
             {
-                return await category.GetAll();
+                return await client.GetAll();
             }
             catch (Exception)
             {
+
                 throw;
             }
-
         }
-        [HttpPost("Create")]
-        public async Task<bool> Create(Categorium categorium)
-        {
-            try
-            {
-                return await category.Create(categorium);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
 
-        }
         [HttpGet("Get")]
-        public async Task<Categorium> Get(int id)
+        public async Task<Cliente> Get(int idclient)
         {
             try
             {
-                return await category.Get(id);
+                return await client.Get(idclient);
             }
             catch (Exception)
             {
+
                 throw;
             }
-
         }
 
-        [HttpPut("Update")]
-        public async Task<bool> Update(Categorium categorium)
+        [HttpPost("Create")]
+        public async Task<bool> Create(Cliente cliente)
         {
             try
             {
-                return await category.Update(categorium);
-
+                return await client.Create(cliente);
             }
             catch (Exception)
             {
-                return false;
+
                 throw;
             }
 
         }
 
         [HttpDelete("Delete")]
-        public async Task<bool> Delete(int id)
+        public async Task<bool> Delete(int idclient)
         {
             try
             {
-                return await category.Delete(id);
-
+                return await client.Delete(idclient);
             }
             catch (Exception)
             {
-                return false;
+
                 throw;
             }
 
         }
 
+        [HttpPut("Update")]
+        public async Task<bool> Update(Cliente cliente)
+        {
+            try
+            {
+                return await client.Update(cliente);
+            }
+            catch (Exception)
+            {
 
-
+                throw;
+            }
+        }
     }
 }

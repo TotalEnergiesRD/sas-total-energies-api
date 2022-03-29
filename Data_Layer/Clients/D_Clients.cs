@@ -3,46 +3,45 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Entity_Layer;
 using Microsoft.EntityFrameworkCore;
 
-namespace Data_Layer.Cases
+namespace Data_Layer.Clients
 {
-    public class D_Cases
+    public class D_Clients
     {
         private SASContext _context = new SASContext();
-        public async Task<List<Caso>> GetAll()
+        public async Task<List<Cliente>> GetAll()
         {
             try
             {
-                return await _context.Casos.ToListAsync();
+                return await _context.Clientes.ToListAsync();
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
-                return new List<Caso>();
+                return new List<Cliente>();
             }
         }
 
-        public async Task<Caso> Get(int? id)
+        public async Task<Cliente> Get(int? id)
         {
-            var caso = await _context.Casos
-                .FirstOrDefaultAsync(m => m.IdCaso == id);
-            if (caso == null)
+            var client = await _context.Clientes
+                .FirstOrDefaultAsync(m => m.IdCliente == id);
+            if (client == null)
             {
-                return caso;
+                return client;
             }
 
-            return caso;
+            return client;
         }
 
 
-        public async Task<bool> Create(Caso casoss)
+        public async Task<bool> Create(Cliente cliente)
         {
             try
             {
-                _context.Casos.Add(casoss);
+                _context.Clientes.Add(cliente);
                 await _context.SaveChangesAsync();
                 return true;
 
@@ -59,10 +58,10 @@ namespace Data_Layer.Cases
         {
             try
             {
-                if (CaseExists(id))
+                if (ClientExists(id))
                 {
-                    var caso = await _context.Casos.FindAsync(id);
-                    _context.Casos.Remove(caso);
+                    var client = await _context.Clientes.FindAsync(id);
+                    _context.Clientes.Remove(client);
                     await _context.SaveChangesAsync();
                     return true;
                 }
@@ -74,30 +73,27 @@ namespace Data_Layer.Cases
             return false;
         }
 
-        private bool CaseExists(int id)
+        private bool ClientExists(int id)
         {
-            return _context.Casos.Any(e => e.IdCaso == id);
+            return _context.Clientes.Any(e => e.IdCliente == id);
         }
 
-        public async Task<bool> Update(Caso caso)
+        public async Task<bool> Update(Cliente client)
         {
             try
             {
-                _context.Casos.Update(caso);
+                _context.Clientes.Update(client);
                 await _context.SaveChangesAsync();
                 return true;
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CaseExists(caso.IdCaso))
+                if (!ClientExists(client.IdCliente))
                 {
                     return false;
                 }
             }
             return false;
         }
-
-
     }
 }
-
