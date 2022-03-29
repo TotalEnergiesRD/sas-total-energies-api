@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text.Json;
 
 namespace Entity_Layer
 {
@@ -13,10 +12,10 @@ namespace Entity_Layer
         public int? Detalle { get; set; }
         public int Estado { get; set; }
         public string Descripcion { get; set; } = null!;
-        public int Responsable { get; set; }       
+        public int Responsable { get; set; }
         public int IdCliente { get; set; }
         public string? Fecha { get; set; }
         public string? Tiempo { get; set; }
-        //public string? Extra { get; set; }
+        public string? Extra { get; set; }
     }
 }

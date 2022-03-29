@@ -50,12 +50,12 @@ namespace sas_total_energies_api.Controllers
 
         }
 
-        [HttpPut("Edit")]
-        public async Task<bool> Edit(Usuario usuario)
+        [HttpPut("Update")]
+        public async Task<bool> Update(Usuario usuario)
         {
             try
             {
-                return await users.Edit(usuario);
+                return await users.Update(usuario);
 
             }
             catch (Exception)
@@ -66,7 +66,7 @@ namespace sas_total_energies_api.Controllers
 
         }
 
-        [HttpPut("Delete")]
+        [HttpDelete("Delete")]
         public async Task<bool> Delete(int id)
         {
             try

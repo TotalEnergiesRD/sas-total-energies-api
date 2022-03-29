@@ -56,7 +56,7 @@ namespace sas_total_energies_api.Controllers
 
         }
 
-        [HttpPut("Delete")]
+        [HttpDelete("Delete")]
         public async Task<bool> Delete(int idcaso)
         {
             try
