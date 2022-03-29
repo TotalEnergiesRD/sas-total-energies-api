@@ -11,5 +11,6 @@ namespace Entity_Layer
         public long Codigo { get; set; }
         public string? Email { get; set; }
         public string Password { get; set; } = null!;
+        public int Rol { get; set; }
     }
 }
