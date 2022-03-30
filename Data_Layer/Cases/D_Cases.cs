@@ -74,6 +74,32 @@ namespace Data_Layer.Cases
             return false;
         }
 
+        //private string Code()
+        //{
+        //    string code = Codegenerator();
+        //    while (CodeExists(code))
+        //    {
+        //        code = Codegenerator();
+        //    }
+        //    return code;
+        //}
+
+        //private string Codegenerator() 
+        //{
+        //    StringBuilder codigo = new StringBuilder();
+        //    codigo.Append("CA");
+        //    Random random = new Random();
+        //    codigo.Append(random.Next(100000, 999999));
+        //    return codigo.ToString();
+        //}
+
+
+
+        //private bool CodeExists(string caso)
+        //{
+        //    return _context.Casos.Any(e => e.Codigo == caso);
+        //}
+
         private bool CaseExists(int id)
         {
             return _context.Casos.Any(e => e.IdCaso == id);
