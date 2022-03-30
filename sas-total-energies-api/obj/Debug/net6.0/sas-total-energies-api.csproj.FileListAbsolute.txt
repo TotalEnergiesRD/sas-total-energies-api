@@ -80,9 +80,7 @@ C:\Users\Randy\Desktop\sas-total-energies-api\sas-total-energies-api\bin\Debug\n
 C:\Users\Randy\Desktop\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Randy\Desktop\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Randy\Desktop\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Data_Layer.dll
-C:\Users\Randy\Desktop\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Entity_L.dll
 C:\Users\Randy\Desktop\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Data_Layer.pdb
-C:\Users\Randy\Desktop\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Entity_L.pdb
 C:\Users\Randy\Desktop\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.csproj.AssemblyReference.cache
 C:\Users\Randy\Desktop\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Randy\Desktop\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.AssemblyInfoInputs.cache
@@ -123,3 +121,5 @@ C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Entity_Layer.pdb
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.RazorAssemblyInfo.cache
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.RazorAssemblyInfo.cs
+C:\Users\Randy\Desktop\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Entity_Layer.dll
+C:\Users\Randy\Desktop\sas-total-energies-api\sas-total-energies-api\bin\Debug\net6.0\Entity_Layer.pdb

@@ -66,21 +66,21 @@ namespace sas_total_energies_api.Controllers
 
         }
 
-        [HttpDelete("Delete")]
-        public async Task<bool> Delete(int id)
-        {
-            try
-            {
-                return await category.Delete(id);
+        //[HttpDelete("Delete")]
+        //public async Task<bool> Delete(int id)
+        //{
+        //    try
+        //    {
+        //        return await category.Delete(id);
 
-            }
-            catch (Exception)
-            {
-                return false;
-                throw;
-            }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return false;
+        //        throw;
+        //    }
 
-        }
+        //}
 
 
 

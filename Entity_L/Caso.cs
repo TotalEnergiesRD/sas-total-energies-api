@@ -17,5 +17,6 @@ namespace Entity_Layer
         public string? Fecha { get; set; }
         public string? Tiempo { get; set; }
         public string? Extra { get; set; }
+        public string Codigo { get; set; } = null!;
     }
 }

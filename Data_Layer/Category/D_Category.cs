@@ -82,27 +82,27 @@ namespace Data_Layer.Category
 
         }
 
-        public async Task<bool> Delete(int id)
-        {
-            try
-            {
-                var category = await _context.Categoria.FirstOrDefaultAsync(c => c.IdCategoria == id);
-                if (category != null)
-                {
-                    _context.Categoria.Remove(category);
-                    await _context.SaveChangesAsync();
+        //public async Task<bool> Delete(int id)
+        //{
+        //    try
+        //    {
+        //        var category = await _context.Categoria.FirstOrDefaultAsync(c => c.IdCategoria == id);
+        //        if (category != null)
+        //        {
+        //            _context.Categoria.Remove(category);
+        //            await _context.SaveChangesAsync();
                     
-                }
-                return true;
+        //        }
+        //        return true;
 
-            }
-            catch (Exception)
-            {
-                return false;
-                throw;
-            }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return false;
+        //        throw;
+        //    }
 
-        }
+        //}
 
     }
 }

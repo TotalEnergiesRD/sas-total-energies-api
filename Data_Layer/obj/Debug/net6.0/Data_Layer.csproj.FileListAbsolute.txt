@@ -18,8 +18,6 @@ C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Data_L
 C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Data_Layer.dll
 C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\ref\Data_Layer.dll
 C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Data_Layer.pdb
-C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Entity_L.dll
-C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Entity_L.pdb
 C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\Data_Layer.csproj.AssemblyReference.cache
 C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\Data_Layer.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\Data_Layer.AssemblyInfoInputs.cache
@@ -32,3 +30,5 @@ C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\Data_L
 C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\obj\Debug\net6.0\Data_Layer.genruntimeconfig.cache
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Entity_Layer.dll
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Entity_Layer.pdb
+C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Entity_Layer.dll
+C:\Users\Randy\Desktop\sas-total-energies-api\Data_Layer\bin\Debug\net6.0\Entity_Layer.pdb

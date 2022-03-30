@@ -71,8 +71,9 @@ namespace Data_Layer.Users
         {
             try
             {
+                usuario.Password = Encrypt.GetMD5(usuario.Password);
                 _context.Usuarios.Update(usuario);
-                _context.SaveChanges();
+                await _context.SaveChangesAsync();
                 return true;
                 
             }
