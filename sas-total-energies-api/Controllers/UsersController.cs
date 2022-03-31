@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Data_Layer.Users;
+using Data_Layer.D_Users;
 using Entity_Layer;
 
 namespace sas_total_energies_api.Controllers
@@ -11,7 +11,7 @@ namespace sas_total_energies_api.Controllers
     {
         private D_Users users = new D_Users();
         [HttpGet("GetAll")]
-        public async Task<List<Usuario>> GetAll()
+        public async Task<List<User>> GetAll()
         {
             try
             {
@@ -24,7 +24,7 @@ namespace sas_total_energies_api.Controllers
 
         }
         [HttpPost("Create")]
-        public async Task<bool> Create(Usuario usuario)
+        public async Task<bool> Create(User usuario)
         {
             try
             {
@@ -37,7 +37,7 @@ namespace sas_total_energies_api.Controllers
 
         }
         [HttpGet("Get")]
-        public async Task<Usuario> Get(int id)
+        public async Task<User> Get(int id)
         {
             try
             {
@@ -51,11 +51,11 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpPut("Update")]
-        public async Task<bool> Update(Usuario usuario)
+        public async Task<bool> Update(User user)
         {
             try
             {
-                return await users.Update(usuario);
+                return await users.Update(user);
 
             }
             catch (Exception)

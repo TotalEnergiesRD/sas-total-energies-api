@@ -3,21 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Entity_Layer;
 
-namespace Data_Layer.Category
+namespace Data_Layer.D_CaseType
 {
-    public class D_Category
+    public class D_CaseType
     {
         private SASContext _context = new SASContext();
-        public async Task<List<Categorium>> GetAll()
+        public async Task<List<CaseType>> GetAll()
         {
             try
             {
-                return await _context.Categoria.ToListAsync();
+                return await _context.CaseTypes.ToListAsync();
             }
             catch (Exception)
             {
@@ -25,11 +24,11 @@ namespace Data_Layer.Category
             }
 
         }
-        public async Task<bool> Create(Categorium category)
+        public async Task<bool> Create(CaseType caseType)
         {
             try
             {
-                _context.Categoria.Add(category);
+                _context.CaseTypes.Add(caseType);
                 await _context.SaveChangesAsync();
                 return true;
 
@@ -42,11 +41,11 @@ namespace Data_Layer.Category
 
         }
 
-        public async Task<Categorium> Get(int id)
+        public async Task<CaseType> Get(int id)
         {
             try
             {
-                var category = await _context.Categoria.FirstOrDefaultAsync(c => c.IdCategoria == id);
+                var category = await _context.CaseTypes.FirstOrDefaultAsync(c => c.IdCaseType == id);
                 if (category != null)
                 {
                     return category;
@@ -65,11 +64,11 @@ namespace Data_Layer.Category
 
         }
 
-        public async Task<bool> Update(Categorium category)
+        public async Task<bool> Update(CaseType caseType)
         {
             try
             {
-                _context.Categoria.Update(category);
+                _context.CaseTypes.Update(caseType);
                 await _context.SaveChangesAsync();
                 return true;
 
@@ -82,27 +81,26 @@ namespace Data_Layer.Category
 
         }
 
-        //public async Task<bool> Delete(int id)
-        //{
-        //    try
-        //    {
-        //        var category = await _context.Categoria.FirstOrDefaultAsync(c => c.IdCategoria == id);
-        //        if (category != null)
-        //        {
-        //            _context.Categoria.Remove(category);
-        //            await _context.SaveChangesAsync();
-                    
-        //        }
-        //        return true;
+        public async Task<bool> Delete(int id)
+        {
+            try
+            {
+                var caseType = await _context.CaseTypes.FirstOrDefaultAsync(c => c.IdCaseType == id);
+                if (caseType != null)
+                {
+                    caseType.Status = false;
+                    _context.CaseTypes.Update(caseType);
+                    await _context.SaveChangesAsync();
+                }
+                return true;
 
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return false;
-        //        throw;
-        //    }
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
 
-        //}
-
+        }
     }
 }
