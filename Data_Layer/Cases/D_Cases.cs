@@ -12,23 +12,37 @@ namespace Data_Layer.Cases
     public class D_Cases
     {
         private SASContext _context = new SASContext();
-        public async Task<List<Caso>> GetAll()
+        public async Task<List<CasosView>> GetAll()
         {
             try
             {
-                return await _context.Casos.ToListAsync();
+                return await _context.CasosViews.ToListAsync();
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
-                return new List<Caso>();
+                return new List<CasosView>();
+            }
+
+        }
+
+        public async Task<List<CasosDiaView>> GetToday()
+        {
+            try
+            {
+                return await _context.CasosDiaViews.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+                return new List<CasosDiaView>();
             }
         }
 
-        public async Task<Caso> Get(int? id)
+        public async Task<CasosView> Get(string? id)
         {
-            var caso = await _context.Casos
-                .FirstOrDefaultAsync(m => m.IdCaso == id);
+            var caso = await _context.CasosViews
+                .FirstOrDefaultAsync(m => m.Codigo == id);
             if (caso == null)
             {
                 return caso;
@@ -55,7 +69,7 @@ namespace Data_Layer.Cases
 
         }
 
-        public async Task<bool> Delete(int id)
+        public async Task<bool> Delete(string id)
         {
             try
             {
@@ -100,9 +114,9 @@ namespace Data_Layer.Cases
         //    return _context.Casos.Any(e => e.Codigo == caso);
         //}
 
-        private bool CaseExists(int id)
+        private bool CaseExists(string id)
         {
-            return _context.Casos.Any(e => e.IdCaso == id);
+            return _context.Casos.Any(e => e.Codigo == id);
         }
 
         public async Task<bool> Update(Caso caso)
@@ -115,7 +129,7 @@ namespace Data_Layer.Cases
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CaseExists(caso.IdCaso))
+                if (!CaseExists(caso.Codigo))
                 {
                     return false;
                 }

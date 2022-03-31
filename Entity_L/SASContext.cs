@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
@@ -18,9 +17,12 @@ namespace Entity_Layer
         }
 
         public virtual DbSet<Caso> Casos { get; set; } = null!;
+        public virtual DbSet<CasosDiaView> CasosDiaViews { get; set; } = null!;
+        public virtual DbSet<CasosView> CasosViews { get; set; } = null!;
         public virtual DbSet<Categorium> Categoria { get; set; } = null!;
         public virtual DbSet<Cliente> Clientes { get; set; } = null!;
         public virtual DbSet<Detalle> Detalles { get; set; } = null!;
+        public virtual DbSet<EstadoCaso> EstadoCasos { get; set; } = null!;
         public virtual DbSet<SubCategorium> SubCategoria { get; set; } = null!;
         public virtual DbSet<TipoDeCaso> TipoDeCasos { get; set; } = null!;
         public virtual DbSet<Usuario> Usuarios { get; set; } = null!;
@@ -35,6 +37,8 @@ namespace Entity_Layer
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.HasPostgresExtension("pgcrypto");
+
             modelBuilder.Entity<Caso>(entity =>
             {
                 entity.HasKey(e => e.IdCaso)
@@ -44,9 +48,57 @@ namespace Entity_Layer
 
                 entity.Property(e => e.IdCaso).UseIdentityAlwaysColumn();
 
+                entity.Property(e => e.Codigo).HasMaxLength(50);
+
                 entity.Property(e => e.Fecha).HasMaxLength(50);
 
                 entity.Property(e => e.Tiempo).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<CasosDiaView>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("CasosDiaView", "SAS");
+
+                entity.Property(e => e.Cliente).HasColumnName("cliente");
+
+                entity.Property(e => e.Codigo).HasMaxLength(50);
+
+                entity.Property(e => e.Estadocasso)
+                    .HasMaxLength(10)
+                    .HasColumnName("estadocasso");
+
+                entity.Property(e => e.Fecha).HasMaxLength(50);
+
+                entity.Property(e => e.Tiempo).HasMaxLength(50);
+
+                entity.Property(e => e.Tipodecaso)
+                    .HasMaxLength(50)
+                    .HasColumnName("tipodecaso");
+            });
+
+            modelBuilder.Entity<CasosView>(entity =>
+            {
+                entity.HasNoKey();
+
+                entity.ToView("CasosView", "SAS");
+
+                entity.Property(e => e.Cliente).HasColumnName("cliente");
+
+                entity.Property(e => e.Codigo).HasMaxLength(50);
+
+                entity.Property(e => e.Estadocasso)
+                    .HasMaxLength(10)
+                    .HasColumnName("estadocasso");
+
+                entity.Property(e => e.Fecha).HasMaxLength(50);
+
+                entity.Property(e => e.Tiempo).HasMaxLength(50);
+
+                entity.Property(e => e.Tipodecaso)
+                    .HasMaxLength(50)
+                    .HasColumnName("tipodecaso");
             });
 
             modelBuilder.Entity<Categorium>(entity =>
@@ -87,6 +139,18 @@ namespace Entity_Layer
                 entity.Property(e => e.IdDetalle).UseIdentityAlwaysColumn();
 
                 entity.Property(e => e.Nombre).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<EstadoCaso>(entity =>
+            {
+                entity.HasKey(e => e.IdEstado)
+                    .HasName("pk");
+
+                entity.ToTable("EstadoCaso", "SAS");
+
+                entity.Property(e => e.IdEstado).UseIdentityAlwaysColumn();
+
+                entity.Property(e => e.Nombre).HasMaxLength(10);
             });
 
             modelBuilder.Entity<SubCategorium>(entity =>
@@ -141,6 +205,8 @@ namespace Entity_Layer
 
                 entity.Property(e => e.Password).HasMaxLength(200);
             });
+
+            modelBuilder.HasSequence("numerodecaso");
 
             OnModelCreatingPartial(modelBuilder);
         }
