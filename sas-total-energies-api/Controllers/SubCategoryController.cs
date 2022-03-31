@@ -1,21 +1,21 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Data_Layer.D_Category;
+using Data_Layer.D_SubCategory;
 using Entity_Layer;
 
 namespace sas_total_energies_api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class SubCategoryController : ControllerBase
     {
-        private D_Category Categories = new D_Category();
+        private D_SubCategory SubCategories = new D_SubCategory();
         [HttpGet("GetAll")]
-        public async Task<List<Category>> GetAll()
+        public async Task<List<SubCategory>> GetAll()
         {
             try
             {
-                return await Categories.GetAll();
+                return await SubCategories.GetAll();
             }
             catch (Exception)
             {
@@ -24,11 +24,11 @@ namespace sas_total_energies_api.Controllers
 
         }
         [HttpPost("Create")]
-        public async Task<bool> Create(Category category)
+        public async Task<bool> Create(SubCategory subCategory)
         {
             try
             {
-                return await Categories.Create(category);
+                return await SubCategories.Create(subCategory);
             }
             catch (Exception)
             {
@@ -37,11 +37,11 @@ namespace sas_total_energies_api.Controllers
 
         }
         [HttpGet("Get")]
-        public async Task<Category> Get(int id)
+        public async Task<SubCategory> Get(int id)
         {
             try
             {
-                return await Categories.Get(id);
+                return await SubCategories.Get(id);
             }
             catch (Exception)
             {
@@ -51,11 +51,11 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpPut("Update")]
-        public async Task<bool> Update(Category category)
+        public async Task<bool> Update(SubCategory subCategory)
         {
             try
             {
-                return await Categories.Update(category);
+                return await SubCategories.Update(subCategory);
 
             }
             catch (Exception)
@@ -71,7 +71,7 @@ namespace sas_total_energies_api.Controllers
         {
             try
             {
-                return await Categories.Delete(id);
+                return await SubCategories.Delete(id);
 
             }
             catch (Exception)
@@ -81,8 +81,5 @@ namespace sas_total_energies_api.Controllers
             }
 
         }
-
-
-
     }
 }

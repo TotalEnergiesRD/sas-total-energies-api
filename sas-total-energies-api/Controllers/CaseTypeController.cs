@@ -1,88 +1,86 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Data_Layer.D_Category;
 using Entity_Layer;
+using Data_Layer.D_CaseType;
+using System.Text.Json;
 
 namespace sas_total_energies_api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class CaseTypeController : ControllerBase
     {
-        private D_Category Categories = new D_Category();
+        private D_CaseType casetypes = new D_CaseType();
+
         [HttpGet("GetAll")]
-        public async Task<List<Category>> GetAll()
+        public async Task<List<CaseType>> GetAll()
         {
             try
             {
-                return await Categories.GetAll();
+                return await casetypes.GetAll();
             }
             catch (Exception)
             {
+
                 throw;
             }
-
         }
-        [HttpPost("Create")]
-        public async Task<bool> Create(Category category)
-        {
-            try
-            {
-                return await Categories.Create(category);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
 
-        }
         [HttpGet("Get")]
-        public async Task<Category> Get(int id)
+        public async Task<CaseType> Get(int idcasetype)
         {
             try
             {
-                return await Categories.Get(id);
+                return await casetypes.Get(idcasetype);
             }
             catch (Exception)
             {
+
+                throw;
+            }
+        }
+
+        [HttpPost("Create")]
+        public async Task<bool> Create(CaseType caseType)
+        {
+            try
+            {
+                return await casetypes.Create(caseType);
+            }
+            catch (Exception)
+            {
+
                 throw;
             }
 
         }
 
         [HttpPut("Update")]
-        public async Task<bool> Update(Category category)
+        public async Task<bool> Update(CaseType caseType)
         {
             try
             {
-                return await Categories.Update(category);
-
+                return await casetypes.Update(caseType);
             }
             catch (Exception)
             {
-                return false;
                 throw;
             }
-
         }
 
         [HttpDelete("Delete")]
-        public async Task<bool> Delete(int id)
+        public async Task<bool> Delete(int idcaseType)
         {
             try
             {
-                return await Categories.Delete(id);
-
+                return await casetypes.Delete(idcaseType);
             }
             catch (Exception)
             {
-                return false;
+
                 throw;
             }
 
         }
-
-
-
     }
 }

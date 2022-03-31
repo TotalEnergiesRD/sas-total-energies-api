@@ -9,16 +9,16 @@ using Microsoft.EntityFrameworkCore;
 using Entity_Layer;
 using Data_Layer.Auth;
 
-namespace Data_Layer.Users
+namespace Data_Layer.D_Users
 {
     public class D_Users
     {
         private SASContext _context = new SASContext();
-        public async Task<List<Usuario>> GetAll()
+        public async Task<List<User>> GetAll()
         {
             try
             {
-                return await _context.Usuarios.ToListAsync();
+                return await _context.Users.ToListAsync();
             }
             catch (Exception)
             {
@@ -26,12 +26,12 @@ namespace Data_Layer.Users
             }
 
         }
-        public async Task<bool> Create(Usuario usuario)
+        public async Task<bool> Create(User user)
         {
             try
             {
-                usuario.Password = Encrypt.GetMD5(usuario.Password);
-                _context.Usuarios.Add(usuario);
+                user.Password = Encrypt.GetMD5(user.Password);
+                _context.Users.Add(user);
                 await _context.SaveChangesAsync();
                 return true;
 
@@ -44,11 +44,11 @@ namespace Data_Layer.Users
 
         }
 
-        public async Task<Usuario> Get(int id)
+        public async Task<User> Get(int id)
         {
             try
             {
-                var usuario = await _context.Usuarios.FirstOrDefaultAsync(c => c.IdUsuario == id);
+                var usuario = await _context.Users.FirstOrDefaultAsync(c => c.IdUser == id);
                 if (usuario != null)
                 {
                     return usuario;
@@ -67,12 +67,12 @@ namespace Data_Layer.Users
 
         }
 
-        public async Task<bool> Update(Usuario usuario)
+        public async Task<bool> Update(User user)
         {
             try
             {
-                usuario.Password = Encrypt.GetMD5(usuario.Password);
-                _context.Usuarios.Update(usuario);
+                user.Password = Encrypt.GetMD5(user.Password);
+                _context.Users.Update(user);
                 await _context.SaveChangesAsync();
                 return true;
                 
@@ -89,10 +89,10 @@ namespace Data_Layer.Users
         {
             try
             {
-                var usuario = await _context.Usuarios.FirstOrDefaultAsync(c => c.IdUsuario == id);
-                if (usuario != null)
+                var user = await _context.Users.FirstOrDefaultAsync(c => c.IdUser == id);
+                if (user != null)
                 {
-                    _context.Usuarios.Remove(usuario);
+                    _context.Users.Remove(user);
                     await _context.SaveChangesAsync();
 
                 }

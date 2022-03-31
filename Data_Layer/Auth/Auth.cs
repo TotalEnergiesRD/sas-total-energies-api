@@ -32,7 +32,7 @@ namespace Data_Layer.Auth
         private async Task<LoginModel> UserValidation(string Email, string Pass)
         {
 
-            var user = await _context.Usuarios
+            var user = await _context.Users
                 .FirstOrDefaultAsync(m => m.Email == Email && m.Password == Pass);
             if (user == null)
             {
@@ -41,12 +41,12 @@ namespace Data_Layer.Auth
 
             LoginModel login = new LoginModel()
             {
-                IdUsuario = user.IdUsuario,
+                IdUser = user.IdUser,
                 Email = user.Email,
-                Codigo = user.Codigo,
-                Nombre = user.Nombre,
-                Apellidos = user.Apellidos,
-                Rol = user.Rol,
+                Code = user.Code,
+                Name = user.Name,
+                LastName = user.Lastname,
+                Role = user.Role,
             };
             
             return login;

@@ -7,42 +7,42 @@ using Microsoft.AspNetCore.Mvc;
 using Entity_Layer;
 using Microsoft.EntityFrameworkCore;
 
-namespace Data_Layer.Cases
+namespace Data_Layer.D_Cases
 {
     public class D_Cases
     {
         private SASContext _context = new SASContext();
-        public async Task<List<Caso>> GetAll()
+        public async Task<List<Case>> GetAll()
         {
             try
             {
-                return await _context.Casos.ToListAsync();
+                return await _context.Cases.ToListAsync();
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
-                return new List<Caso>();
+                return new List<Case>();
             }
         }
 
-        public async Task<Caso> Get(int? id)
+        public async Task<Case> Get(int? id)
         {
-            var caso = await _context.Casos
-                .FirstOrDefaultAsync(m => m.IdCaso == id);
-            if (caso == null)
+            var cases = await _context.Cases
+                .FirstOrDefaultAsync(m => m.IdCases == id);
+            if (cases == null)
             {
-                return caso;
+                return cases;
             }
 
-            return caso;
+            return cases;
         }
 
 
-        public async Task<bool> Create(Caso casoss)
+        public async Task<bool> Create(Case cases)
         {
             try
             {
-                _context.Casos.Add(casoss);
+                _context.Cases.Add(cases);
                 await _context.SaveChangesAsync();
                 return true;
 
@@ -61,8 +61,8 @@ namespace Data_Layer.Cases
             {
                 if (CaseExists(id))
                 {
-                    var caso = await _context.Casos.FindAsync(id);
-                    _context.Casos.Remove(caso);
+                    var cases = await _context.Cases.FindAsync(id);
+                    _context.Cases.Remove(cases);
                     await _context.SaveChangesAsync();
                     return true;
                 }
@@ -70,6 +70,29 @@ namespace Data_Layer.Cases
             catch (Exception)
             {
                 throw;
+            }
+            return false;
+        }
+
+        private bool CaseExists(int id)
+        {
+            return _context.Cases.Any(e => e.IdCases == id);
+        }
+
+        public async Task<bool> Update(Case cases)
+        {
+            try
+            {
+                _context.Cases.Update(cases);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!CaseExists(cases.IdCases))
+                {
+                    return false;
+                }
             }
             return false;
         }
@@ -99,29 +122,6 @@ namespace Data_Layer.Cases
         //{
         //    return _context.Casos.Any(e => e.Codigo == caso);
         //}
-
-        private bool CaseExists(int id)
-        {
-            return _context.Casos.Any(e => e.IdCaso == id);
-        }
-
-        public async Task<bool> Update(Caso caso)
-        {
-            try
-            {
-                _context.Casos.Update(caso);
-                await _context.SaveChangesAsync();
-                return true;
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CaseExists(caso.IdCaso))
-                {
-                    return false;
-                }
-            }
-            return false;
-        }
 
 
     }
