@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Entity_Layer;
-using Data_Layer.D_CaseType;
+using Data_Layer.N_CaseType;
 using System.Text.Json;
 
 namespace sas_total_energies_api.Controllers

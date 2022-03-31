@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Entity_Layer;
 
-namespace Data_Layer.D_CaseType
+namespace Data_Layer.N_CaseType
 {
     public class D_CaseType
     {
