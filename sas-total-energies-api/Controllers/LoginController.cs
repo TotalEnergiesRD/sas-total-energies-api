@@ -11,7 +11,7 @@ namespace sas_total_energies_api.Controllers
     {
         Auth auth = new Auth();
 
-        [HttpPost]
+        [HttpGet]
         public async Task<LoginModel> Login(string Email, string Pass)
         {
             try

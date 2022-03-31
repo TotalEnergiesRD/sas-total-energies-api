@@ -31,6 +31,7 @@ namespace Data_Layer.N_Users
         {
             try
             {
+                usuario.Email = usuario.Email.ToLower();
                 usuario.Password = Encrypt.GetMD5(usuario.Password);
                 _context.Users.Add(usuario);
                 await _context.SaveChangesAsync();
