@@ -18,7 +18,7 @@ namespace Data_Layer.Auth
             try
             {
                 string newpass = Encrypt.GetMD5(Pass);
-                return await UserValidation(Email, newpass);
+                return await UserValidation(Email.ToLower(), newpass);
 
             }
             catch (Exception)
@@ -31,7 +31,6 @@ namespace Data_Layer.Auth
        
         private async Task<LoginModel> UserValidation(string Email, string Pass)
         {
-
             var user = await _context.Users
                 .FirstOrDefaultAsync(m => m.Email == Email && m.Password == Pass);
             if (user == null)
