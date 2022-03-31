@@ -11,6 +11,7 @@ C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Entity_L\o
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Entity_L\obj\Debug\net6.0\ref\Entity_Layer.dll
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_Layer.pdb
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_Layer.genruntimeconfig.cache
+C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_Layer.csproj.AssemblyReference.cache
 C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\bin\Debug\net6.0\Entity_Layer.deps.json
 C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\bin\Debug\net6.0\Entity_Layer.runtimeconfig.json
 C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\bin\Debug\net6.0\Entity_Layer.dll

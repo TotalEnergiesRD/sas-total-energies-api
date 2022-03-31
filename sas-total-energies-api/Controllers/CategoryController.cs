@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Data_Layer.N_Category;
+using Data_Layer.D_Category;
 using Entity_Layer;
 
 namespace sas_total_energies_api.Controllers
@@ -9,13 +9,13 @@ namespace sas_total_energies_api.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private D_Category category = new D_Category();
+        private D_Category Categories = new D_Category();
         [HttpGet("GetAll")]
         public async Task<List<Category>> GetAll()
         {
             try
             {
-                return await category.GetAll();
+                return await Categories.GetAll();
             }
             catch (Exception)
             {
@@ -24,11 +24,11 @@ namespace sas_total_energies_api.Controllers
 
         }
         [HttpPost("Create")]
-        public async Task<bool> Create(Category categorium)
+        public async Task<bool> Create(Category category)
         {
             try
             {
-                return await category.Create(categorium);
+                return await Categories.Create(category);
             }
             catch (Exception)
             {
@@ -41,7 +41,7 @@ namespace sas_total_energies_api.Controllers
         {
             try
             {
-                return await category.Get(id);
+                return await Categories.Get(id);
             }
             catch (Exception)
             {
@@ -51,11 +51,11 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpPut("Update")]
-        public async Task<bool> Update(Category categorium)
+        public async Task<bool> Update(Category category)
         {
             try
             {
-                return await category.Update(categorium);
+                return await Categories.Update(category);
 
             }
             catch (Exception)
@@ -66,21 +66,21 @@ namespace sas_total_energies_api.Controllers
 
         }
 
-        //[HttpDelete("Delete")]
-        //public async Task<bool> Delete(int id)
-        //{
-        //    try
-        //    {
-        //        return await category.Delete(id);
+        [HttpDelete("Delete")]
+        public async Task<bool> Delete(int id)
+        {
+            try
+            {
+                return await Categories.Delete(id);
 
-        //    }
-        //    catch (Exception)
-        //    {
-        //        return false;
-        //        throw;
-        //    }
+            }
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
 
-        //}
+        }
 
 
 

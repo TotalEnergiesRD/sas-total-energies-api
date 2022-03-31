@@ -12,7 +12,7 @@ namespace sas_total_energies_api.Controllers
         Auth auth = new Auth();
 
         [HttpPost]
-        public async Task<LoginModel> Login(string? Email, string Pass)
+        public async Task<LoginModel> Login(string Email, string Pass)
         {
             try
             {

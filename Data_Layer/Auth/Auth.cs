@@ -45,7 +45,7 @@ namespace Data_Layer.Auth
                 Email = user.Email,
                 Code = user.Code,
                 Name = user.Name,
-                Lastname = user.Lastname,
+                LastName = user.Lastname,
                 Role = user.Role,
             };
             

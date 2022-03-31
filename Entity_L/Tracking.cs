@@ -10,6 +10,5 @@ namespace Entity_Layer
         public long CodeUser { get; set; }
         public string Description { get; set; } = null!;
         public string? Time { get; set; }
-        public int? IdCase { get; set; }
     }
 }

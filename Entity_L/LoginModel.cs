@@ -8,12 +8,12 @@ namespace Entity_Layer
 {
     public class LoginModel
     {
-
+        public string Email { get; set; }
         public int IdUser { get; set; }
-        public string Name { get; set; } = null!;
-        public string Lastname { get; set; } = null!;
         public long Code { get; set; }
-        public string Email { get; set; } = null!;
+        public string Name { get; set; }
+
+        public string LastName { get; set; }
         public int Role { get; set; }
     }
 }

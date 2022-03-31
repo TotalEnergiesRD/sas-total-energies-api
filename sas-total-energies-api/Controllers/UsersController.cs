@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Data_Layer.N_Users;
+using Data_Layer.D_Users;
 using Entity_Layer;
 
 namespace sas_total_energies_api.Controllers
@@ -51,11 +51,11 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpPut("Update")]
-        public async Task<bool> Update(User usuario)
+        public async Task<bool> Update(User user)
         {
             try
             {
-                return await users.Update(usuario);
+                return await users.Update(user);
 
             }
             catch (Exception)
