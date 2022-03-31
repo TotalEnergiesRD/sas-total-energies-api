@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Data_Layer.Clients;
+using Data_Layer.N_Customer;
 using Entity_Layer;
 
 namespace sas_total_energies_api.Controllers
@@ -9,10 +9,10 @@ namespace sas_total_energies_api.Controllers
     [ApiController]
     public class ClientController : ControllerBase
     {
-        private D_Clients client = new D_Clients();
+        private D_Customer client = new D_Customer();
 
         [HttpGet("GetAll")]
-        public async Task<List<Cliente>> GetAll()
+        public async Task<List<Customer>> GetAll()
         {
             try
             {
@@ -26,7 +26,7 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpGet("Get")]
-        public async Task<Cliente> Get(int idclient)
+        public async Task<Customer> Get(int idclient)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpPost("Create")]
-        public async Task<bool> Create(Cliente cliente)
+        public async Task<bool> Create(Customer cliente)
         {
             try
             {
@@ -70,7 +70,7 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpPut("Update")]
-        public async Task<bool> Update(Cliente cliente)
+        public async Task<bool> Update(Customer cliente)
         {
             try
             {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Entity_Layer;
-using Data_Layer.Cases;
+using Data_Layer.N_Cases;
 using System.Text.Json;
 
 
@@ -14,7 +14,7 @@ namespace sas_total_energies_api.Controllers
         private D_Cases cases = new D_Cases();
         
         [HttpGet("GetAll")]
-        public async Task<List<CasosView>> GetAll()
+        public async Task<List<CasesView>> GetAll()
         {
             try
             {
@@ -28,7 +28,7 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpGet("Get")]
-        public async Task<CasosView> Get(string idcase)
+        public async Task<CasesView> Get(string idcase)
         {
             try
             {
@@ -42,7 +42,7 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpGet("GetToday")]
-        public async Task<List<CasosDiaView>> GetToday()
+        public async Task<List<CasesTodayView>> GetToday()
         {
             try
             {
@@ -56,7 +56,7 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpPost("Create")]
-        public async Task<bool> Create(Caso caso)
+        public async Task<bool> Create(Case caso)
         {
             try
             {
@@ -87,7 +87,7 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpPut("Update")]
-        public async Task<bool> Update(Caso caso)
+        public async Task<bool> Update(Case caso)
         {
             try
             {

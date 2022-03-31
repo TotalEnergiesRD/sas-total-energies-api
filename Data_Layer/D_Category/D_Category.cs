@@ -8,16 +8,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Entity_Layer;
 
-namespace Data_Layer.Category
+namespace Data_Layer.N_Category
 {
     public class D_Category
     {
         private SASContext _context = new SASContext();
-        public async Task<List<Categorium>> GetAll()
+        public async Task<List<Category>> GetAll()
         {
             try
             {
-                return await _context.Categoria.ToListAsync();
+                return await _context.Categories.ToListAsync();
             }
             catch (Exception)
             {
@@ -25,11 +25,11 @@ namespace Data_Layer.Category
             }
 
         }
-        public async Task<bool> Create(Categorium category)
+        public async Task<bool> Create(Category category)
         {
             try
             {
-                _context.Categoria.Add(category);
+                _context.Categories.Add(category);
                 await _context.SaveChangesAsync();
                 return true;
 
@@ -42,11 +42,11 @@ namespace Data_Layer.Category
 
         }
 
-        public async Task<Categorium> Get(int id)
+        public async Task<Category> Get(int id)
         {
             try
             {
-                var category = await _context.Categoria.FirstOrDefaultAsync(c => c.IdCategoria == id);
+                var category = await _context.Categories.FirstOrDefaultAsync(c => c.IdCategory == id);
                 if (category != null)
                 {
                     return category;
@@ -65,11 +65,11 @@ namespace Data_Layer.Category
 
         }
 
-        public async Task<bool> Update(Categorium category)
+        public async Task<bool> Update(Category category)
         {
             try
             {
-                _context.Categoria.Update(category);
+                _context.Categories.Update(category);
                 await _context.SaveChangesAsync();
                 return true;
 

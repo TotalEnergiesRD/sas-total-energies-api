@@ -49,7 +49,6 @@ C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.AssemblyInfoInputs.cache
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.AssemblyInfo.cs
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.csproj.CoreCompileInputs.cache
-C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.csproj.CopyComplete
 C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\sas-total-energies-api\obj\Debug\net6.0\sas-total-energies-api.dll
