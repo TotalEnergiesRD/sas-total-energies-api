@@ -12,23 +12,37 @@ namespace Data_Layer.D_Cases
     public class D_Cases
     {
         private SASContext _context = new SASContext();
-        public async Task<List<Case>> GetAll()
+        public async Task<List<CasesView>> GetAll()
         {
             try
             {
-                return await _context.Cases.ToListAsync();
+                return await _context.CasesViews.ToListAsync();
             }
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
-                return new List<Case>();
+                return new List<CasesView>();
             }
         }
 
-        public async Task<Case> Get(int? id)
+
+        public async Task<List<CasesTodayView>> GetToday()
         {
-            var cases = await _context.Cases
-                .FirstOrDefaultAsync(m => m.IdCases == id);
+            try
+            {
+                return await _context.CasesTodayViews.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+                return new List<CasesTodayView>();
+            }
+        }
+
+        public async Task<CasesView> Get(string? id)
+        {
+            var cases = await _context.CasesViews
+                .FirstOrDefaultAsync(m => m.Code == id);
             if (cases == null)
             {
                 return cases;

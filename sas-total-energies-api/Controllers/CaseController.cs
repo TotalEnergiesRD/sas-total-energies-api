@@ -14,7 +14,7 @@ namespace sas_total_energies_api.Controllers
         private D_Cases cases = new D_Cases();
         
         [HttpGet("GetAll")]
-        public async Task<List<Case>> GetAll()
+        public async Task<List<CasesView>> GetAll()
         {
             try
             {
@@ -28,7 +28,7 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpGet("Get")]
-        public async Task<Case> Get(int idcase)
+        public async Task<CasesView> Get(string idcase)
         {
             try
             {
@@ -40,6 +40,21 @@ namespace sas_total_energies_api.Controllers
                 throw;
             }
         }
+
+        [HttpGet("GetToday")]
+        public async Task<List<CasesTodayView>> GetToday()
+        {
+            try
+            {
+                return await cases.GetToday();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
 
         [HttpPost("Create")]
         public async Task<bool> Create(Case caso)
