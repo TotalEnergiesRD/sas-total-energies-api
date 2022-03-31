@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Entity_Layer;
-using Data_Layer.D_Cases;
+using Data_Layer.Cases;
 using System.Text.Json;
 
 
@@ -14,7 +14,7 @@ namespace sas_total_energies_api.Controllers
         private D_Cases cases = new D_Cases();
         
         [HttpGet("GetAll")]
-        public async Task<List<Case>> GetAll()
+        public async Task<List<Caso>> GetAll()
         {
             try
             {
@@ -28,7 +28,7 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpGet("Get")]
-        public async Task<Case> Get(int idcase)
+        public async Task<Caso> Get(int idcase)
         {
             try
             {
@@ -42,7 +42,7 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpPost("Create")]
-        public async Task<bool> Create(Case caso)
+        public async Task<bool> Create(Caso caso)
         {
             try
             {
@@ -55,10 +55,25 @@ namespace sas_total_energies_api.Controllers
             }
 
         }
+               
 
+        [HttpDelete("Delete")]
+        public async Task<bool> Delete(int idcaso)
+        {
+            try
+            {
+                return await cases.Delete(idcaso);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
 
         [HttpPut("Update")]
-        public async Task<bool> Update(Case caso)
+        public async Task<bool> Update(Caso caso)
         {
             try
             {
@@ -71,21 +86,6 @@ namespace sas_total_energies_api.Controllers
             }
         }
 
-
-        [HttpDelete("Delete")]
-        public async Task<bool> Delete(int idcase)
-        {
-            try
-            {
-                return await cases.Delete(idcase);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
-        }
 
     }
 }

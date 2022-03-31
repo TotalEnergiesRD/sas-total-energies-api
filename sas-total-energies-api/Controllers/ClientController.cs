@@ -1,22 +1,22 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Data_Layer.D_Customer;
+using Data_Layer.Clients;
 using Entity_Layer;
 
 namespace sas_total_energies_api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CustomerController : ControllerBase
+    public class ClientController : ControllerBase
     {
-        private D_Customer customers = new D_Customer();
+        private D_Clients client = new D_Clients();
 
         [HttpGet("GetAll")]
-        public async Task<List<Customer>> GetAll()
+        public async Task<List<Cliente>> GetAll()
         {
             try
             {
-                return await customers.GetAll();
+                return await client.GetAll();
             }
             catch (Exception)
             {
@@ -26,11 +26,11 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpGet("Get")]
-        public async Task<Customer> Get(int idcustomer)
+        public async Task<Cliente> Get(int idclient)
         {
             try
             {
-                return await customers.Get(idcustomer);
+                return await client.Get(idclient);
             }
             catch (Exception)
             {
@@ -40,11 +40,11 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpPost("Create")]
-        public async Task<bool> Create(Customer customer)
+        public async Task<bool> Create(Cliente cliente)
         {
             try
             {
-                return await customers.Create(customer);
+                return await client.Create(cliente);
             }
             catch (Exception)
             {
@@ -52,29 +52,14 @@ namespace sas_total_energies_api.Controllers
                 throw;
             }
 
-        }
-        
-
-        [HttpPut("Update")]
-        public async Task<bool> Update(Customer customer)
-        {
-            try
-            {
-                return await customers.Update(customer);
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
         }
 
         [HttpDelete("Delete")]
-        public async Task<bool> Delete(int idcustomer)
+        public async Task<bool> Delete(int idclient)
         {
             try
             {
-                return await customers.Delete(idcustomer);
+                return await client.Delete(idclient);
             }
             catch (Exception)
             {
@@ -82,6 +67,20 @@ namespace sas_total_energies_api.Controllers
                 throw;
             }
 
+        }
+
+        [HttpPut("Update")]
+        public async Task<bool> Update(Cliente cliente)
+        {
+            try
+            {
+                return await client.Update(cliente);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

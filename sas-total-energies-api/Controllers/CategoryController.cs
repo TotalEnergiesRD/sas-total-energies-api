@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Data_Layer.D_Category;
+using Data_Layer.Category;
 using Entity_Layer;
 
 namespace sas_total_energies_api.Controllers
@@ -9,13 +9,13 @@ namespace sas_total_energies_api.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private D_Category Categories = new D_Category();
+        private D_Category category = new D_Category();
         [HttpGet("GetAll")]
-        public async Task<List<Category>> GetAll()
+        public async Task<List<Categorium>> GetAll()
         {
             try
             {
-                return await Categories.GetAll();
+                return await category.GetAll();
             }
             catch (Exception)
             {
@@ -24,11 +24,11 @@ namespace sas_total_energies_api.Controllers
 
         }
         [HttpPost("Create")]
-        public async Task<bool> Create(Category category)
+        public async Task<bool> Create(Categorium categorium)
         {
             try
             {
-                return await Categories.Create(category);
+                return await category.Create(categorium);
             }
             catch (Exception)
             {
@@ -37,11 +37,11 @@ namespace sas_total_energies_api.Controllers
 
         }
         [HttpGet("Get")]
-        public async Task<Category> Get(int id)
+        public async Task<Categorium> Get(int id)
         {
             try
             {
-                return await Categories.Get(id);
+                return await category.Get(id);
             }
             catch (Exception)
             {
@@ -51,11 +51,11 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpPut("Update")]
-        public async Task<bool> Update(Category category)
+        public async Task<bool> Update(Categorium categorium)
         {
             try
             {
-                return await Categories.Update(category);
+                return await category.Update(categorium);
 
             }
             catch (Exception)
@@ -66,21 +66,21 @@ namespace sas_total_energies_api.Controllers
 
         }
 
-        [HttpDelete("Delete")]
-        public async Task<bool> Delete(int id)
-        {
-            try
-            {
-                return await Categories.Delete(id);
+        //[HttpDelete("Delete")]
+        //public async Task<bool> Delete(int id)
+        //{
+        //    try
+        //    {
+        //        return await category.Delete(id);
 
-            }
-            catch (Exception)
-            {
-                return false;
-                throw;
-            }
+        //    }
+        //    catch (Exception)
+        //    {
+        //        return false;
+        //        throw;
+        //    }
 
-        }
+        //}
 
 
 
