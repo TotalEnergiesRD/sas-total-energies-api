@@ -7,7 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Tracking\" />
+    <Folder Include="D_Tracking\" />
+    <Folder Include="D_CaseType\" />
+    <Folder Include="D_Details\" />
+    <Folder Include="D_SubCategory\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -25,4 +25,3 @@ C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_L
 C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\ref\Entity_Layer.dll
 C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_Layer.pdb
 C:\Users\Randy\Desktop\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_Layer.genruntimeconfig.cache
-C:\Users\Jannabel Ramos\Desktop\TOTAL ENERGIES\sas-total-energies-api\Entity_L\obj\Debug\net6.0\Entity_Layer.csproj.AssemblyReference.cache

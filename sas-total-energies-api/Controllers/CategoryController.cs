@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Data_Layer.Category;
+using Data_Layer.N_Category;
 using Entity_Layer;
 
 namespace sas_total_energies_api.Controllers
@@ -11,7 +11,7 @@ namespace sas_total_energies_api.Controllers
     {
         private D_Category category = new D_Category();
         [HttpGet("GetAll")]
-        public async Task<List<Categorium>> GetAll()
+        public async Task<List<Category>> GetAll()
         {
             try
             {
@@ -24,7 +24,7 @@ namespace sas_total_energies_api.Controllers
 
         }
         [HttpPost("Create")]
-        public async Task<bool> Create(Categorium categorium)
+        public async Task<bool> Create(Category categorium)
         {
             try
             {
@@ -37,7 +37,7 @@ namespace sas_total_energies_api.Controllers
 
         }
         [HttpGet("Get")]
-        public async Task<Categorium> Get(int id)
+        public async Task<Category> Get(int id)
         {
             try
             {
@@ -51,7 +51,7 @@ namespace sas_total_energies_api.Controllers
         }
 
         [HttpPut("Update")]
-        public async Task<bool> Update(Categorium categorium)
+        public async Task<bool> Update(Category categorium)
         {
             try
             {
